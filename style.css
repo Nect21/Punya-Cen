@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #241212;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navbar .logo a {
+    font-size: 27px;
+    color: #fff;
+    transition: .3s;
+}
+
+.navbar .logo a:hover {
+    color: grey;
+}
+
+.navbar .logo span:hover {
+    color: #fff;
+}
+
+.navbar span {
+    font-size: 23px;
+    color: grey;
+    transition: .3s;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.navbar .navbar-nav a:hover {
+    color: grey;
+}
+
+#menu {
+    display: none;
+}
+
+.nav-extra a {
+    color: #fff;
+    margin-right: 7px;
+    transition: .3s;
+}
+
+.nav-extra a:hover {
+    color: grey;
+}
+
+
+/* Media qeris */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #241212;
+        width: 30rem;
+        height: 100vh;   
+        transition: .3s ease;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 20px;
+    }
+
+
+}
+/* hp */
+@media (max-width: 450px) {
+    html {
+        font-size: 58%;
+    }
+}
+
